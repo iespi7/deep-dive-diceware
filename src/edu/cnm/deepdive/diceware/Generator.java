@@ -1,6 +1,5 @@
 package edu.cnm.deepdive.diceware;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -64,8 +63,8 @@ public class Generator {
    * @param numWords Number of words requested by user to be returned.
    * @param duplicatesAllowed Specifies whether duplicate results in the randomized list will be allowed.
    * @return Returns the randomized word into the new array list of words that will result.
-   * @throws NegativeArraySizeException
-   * @throws IllegalArgumentException
+   * @throws NegativeArraySizeException Exception will be thrown if a negative int value is entered.
+   * @throws IllegalArgumentException Exception will be thrown if the number of
    */
   public String[] next(int numWords, boolean duplicatesAllowed)
       throws NegativeArraySizeException, IllegalArgumentException{
